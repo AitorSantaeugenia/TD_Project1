@@ -22,6 +22,7 @@ class StartGame {
 		this.loser.src = 'https://aitorsantaeugenia.github.io/TD_Project1/images/defeat.png';
 		this.winner = new Image();
 		this.winner.src = 'https://aitorsantaeugenia.github.io/TD_Project1/images/victory.png';
+		this.htmlBG = document.getElementById('htmlID');
 
 		this.towerCosts = {
 			sand: 70,
@@ -30,6 +31,7 @@ class StartGame {
 	}
 
 	run() {
+		this.htmlBG.src = 'https://aitorsantaeugenia.github.io/TD_Project1/images/loadingScreen1.png';
 		this.intervalId = requestAnimationFrame(() => this.run());
 		this.audio1.volume = 0.1;
 		this.audio1.play();
