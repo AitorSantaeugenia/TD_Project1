@@ -31,7 +31,7 @@ class StartGame {
 	}
 
 	run() {
-		this.htmlBG.src = 'https://aitorsantaeugenia.github.io/TD_Project1/images/loadingScreen1.png';
+		//this.htmlBG.src = 'https://aitorsantaeugenia.github.io/TD_Project1/images/loadingScreen1.png';
 		this.intervalId = requestAnimationFrame(() => this.run());
 		this.audio1.volume = 0.1;
 		this.audio1.play();
