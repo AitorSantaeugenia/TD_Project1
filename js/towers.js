@@ -14,7 +14,7 @@ class Turret {
 		this.h = 80;
 		// IMG
 		this.img = new Image();
-		this.img.src = '../images/towers/sandTurret.png';
+		this.img.src = 'https://aitorsantaeugenia.github.io/TD_Project1/images/towers/sandTurret.png';
 	}
 
 	draw() {
@@ -85,7 +85,7 @@ class CatapultTurret extends Turret {
 		this.bullets = [];
 
 		this.img = new Image();
-		this.img.src = '../images/towers/stoneTurret.png';
+		this.img.src = 'https://aitorsantaeugenia.github.io/TD_Project1/images/towers/stoneTurret.png';
 	}
 }
 
@@ -103,7 +103,7 @@ class SlowTurret extends Turret {
 		this.bullets = [];
 
 		this.img = new Image();
-		this.img.src = '../images/towers/freezeTurret.png';
+		this.img.src = 'https://aitorsantaeugenia.github.io/TD_Project1/images/towers/freezeTurret.png';
 	}
 }
 
@@ -120,6 +120,6 @@ class FlameTurret extends Turret {
 		this.bullets = [];
 
 		this.img = new Image();
-		this.img.src = '../images/towers/flameTurret.png';
+		this.img.src = 'https://aitorsantaeugenia.github.io/TD_Project1/images/towers/flameTurret.png';
 	}
 }

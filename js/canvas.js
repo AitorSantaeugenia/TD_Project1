@@ -5,7 +5,7 @@ class Canvas {
 		this.pathW = pathW;
 		//load Floor img
 		this.img = new Image();
-		this.img.src = '../images/terrain/floor.png';
+		this.img.src = 'https://aitorsantaeugenia.github.io/TD_Project1/images/terrain/floor.png';
 	}
 
 	//Methods

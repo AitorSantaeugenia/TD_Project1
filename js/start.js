@@ -19,9 +19,9 @@ class StartGame {
 		this.userHP = 100;
 		this.userGold = 500;
 		this.loser = new Image();
-		this.loser.src = '../images/defeat.png';
+		this.loser.src = 'https://aitorsantaeugenia.github.io/TD_Project1/images/defeat.png';
 		this.winner = new Image();
-		this.winner.src = '../images/victory.png';
+		this.winner.src = 'https://aitorsantaeugenia.github.io/TD_Project1/images/victory.png';
 
 		this.towerCosts = {
 			sand: 70,

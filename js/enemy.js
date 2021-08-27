@@ -39,7 +39,7 @@ class SmallDemon extends Enemy {
 		this.speed = 1.7;
 		// Imagen enemigo red.png
 		this.img = new Image();
-		this.img.src = '../images/enemies/red.png';
+		this.img.src = 'https://aitorsantaeugenia.github.io/TD_Project1/images/enemies/red.png';
 	}
 
 	draw() {
@@ -115,7 +115,7 @@ class HPbar {
 	draw() {
 		this.context.fillStyle = this.color;
 		this.img = new Image();
-		this.img.src = '../images/hbar.png';
+		this.img.src = 'https://aitorsantaeugenia.github.io/TD_Project1/images/hbar.png';
 		//this.context.fillRect(this.posx, this.posy, this.width, this.height);
 		this.context.drawImage(this.img, this.posx, this.posy, this.width, this.height);
 	}
