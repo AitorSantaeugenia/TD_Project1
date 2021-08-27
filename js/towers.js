@@ -4,7 +4,7 @@ class Turret {
 		this.x = x;
 		this.y = y;
 		// Stats
-		this.dmg = 3.5;
+		this.dmg = 5;
 		this.cost = 70;
 		this.range = 255;
 		this.type = 'sand';

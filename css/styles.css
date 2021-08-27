@@ -23,6 +23,7 @@ html{
 canvas {
   background: url("https://aitorsantaeugenia.github.io/TD_Project1/images/background.png");
   margin-top: 40px ;
+  background-repeat: no-repeat;
   /* border:1px solid red; */
 }
 
@@ -131,6 +132,7 @@ canvas {
 .imageGif img{
   width: 160px !important;
   height:100%;
+  margin-top: 5px;
 }
 
 .turretSelectedBorder {
