@@ -16,7 +16,7 @@ class StartGame {
 		this.enemies = [];
 		this.towers = [];
 		this.framesCounter = 0;
-		this.userHP = 100;
+		this.userHP = 35;
 		this.userGold = 500;
 		this.loser = new Image();
 		this.loser.src = 'https://aitorsantaeugenia.github.io/TD_Project1/images/defeat.png';

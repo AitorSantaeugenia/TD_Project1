@@ -9,7 +9,7 @@ class projectileTurret {
 		this.reachY = reachY;
 		this.turretType = turretType;
 		//Tower speed
-		this.speed = 10;
+		this.speed = 12;
 		//load projectiles
 		this.img = new Image();
 		this.img.type = {
@@ -20,9 +20,13 @@ class projectileTurret {
 		};
 		this.img.src = this.img.type[turretType];
 		//Width - Height
-		if (this.turretType === 'sand' || this.turretType === 'slow') {
+		if (this.turretType === 'sand') {
 			this.w = 12;
 			this.h = 12;
+		} else if (this.turretType === 'slow') {
+			this.w = 12;
+			this.h = 12;
+			this.speed = 10;
 		} else if (this.turretType === 'flame') {
 			this.w = 15;
 			this.h = 15;

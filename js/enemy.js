@@ -117,7 +117,6 @@ class HPbar {
 		this.context.fillStyle = this.color;
 		this.img = new Image();
 		this.img.src = 'https://aitorsantaeugenia.github.io/TD_Project1/images/hbar.png';
-		//this.context.fillRect(this.posx, this.posy, this.width, this.height);
 		this.context.drawImage(this.img, this.posx, this.posy, this.width, this.height);
 	}
 }
