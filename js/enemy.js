@@ -36,9 +36,9 @@ class SmallDemon extends Enemy {
 		// Stats enemigo
 		this.gold = 15;
 		this.minionHp = 300;
-		this.speed = 0.5;
+		this.speed = 1.4;
 		// Imagen enemigo red.png
-		this.randomImage = Math.trunc(Math.random() * (7 - 1) + 1);
+		this.randomImage = Math.trunc(Math.random() * 8);
 		this.img = new Image();
 		this.img.src = `https://aitorsantaeugenia.github.io/TD_Project1/images/enemies/enemy${this.randomImage}.png`;
 	}
