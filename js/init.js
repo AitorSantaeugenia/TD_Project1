@@ -21,6 +21,8 @@ window.onload = function() {
 	let cheatCodeInput = document.getElementById('cheatCodes');
 	let goldCheat = document.getElementById('inputCheatCode');
 	let restartButton = document.getElementById('restarButtonDiv');
+	let soundOn = document.getElementById('yesSound');
+	let soundOff = document.getElementById('noSound');
 
 	// Events
 	document.addEventListener('keydown', (event) => {
@@ -116,6 +118,18 @@ window.onload = function() {
 		turretSelected = 'flame';
 		priceTurret.innerHTML = '$300';
 		start.checkTurretSelected(turretSelected);
+	});
+
+	soundOn.addEventListener('click', function() {
+		// alert('clicked green');
+		soundOn.classList.add('buttonSelectedBorder');
+		soundOff.classList.remove('buttonSelectedBorder');
+	});
+
+	soundOff.addEventListener('click', function() {
+		// alert('clicked red');
+		soundOff.classList.add('buttonSelectedBorder');
+		soundOn.classList.remove('buttonSelectedBorder');
 	});
 
 	function startGame() {

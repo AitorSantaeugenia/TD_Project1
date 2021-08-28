@@ -25,6 +25,8 @@ class StartGame {
 		//this.htmlBG = document.getElementById('htmlID');
 		this.restartButton = document.getElementById('restarButtonDiv');
 		this.restartTextCd = document.getElementById('restartingTimerText');
+		this.soundOn = document.getElementById('yesSound');
+		this.soundOff = document.getElementById('noSound');
 
 		this.towerCosts = {
 			sand: 70,
@@ -35,9 +37,7 @@ class StartGame {
 	run() {
 		//this.htmlBG.src = 'https://aitorsantaeugenia.github.io/TD_Project1/images/loadingScreen1.png';
 		this.intervalId = requestAnimationFrame(() => this.run());
-		this.audio1.volume = 0.1;
-		this.audio1.play();
-		this.audio1.loop = true;
+		this.checkSound();
 		this.context.clearRect(0, 0, this.context.canvas.width, this.context.canvas.height);
 		this.waves = new Wave(this.context, this.path);
 		this.enemyInfo();
@@ -126,8 +126,13 @@ class StartGame {
 		this.enemies.forEach((enemy) => {
 			if (enemy.endingObjective()) {
 				this.userHP -= 1;
-				this.audio5.volume = 0.1;
-				this.audio5.play();
+				if (this.soundOn.classList.contains('buttonSelectedBorder')) {
+					this.audio5.volume = 0.1;
+					this.audio5.play();
+				} else if (this.soundOff.classList.contains('buttonSelectedBorder')) {
+					this.audio5.volume = 0;
+					this.audio5.pause();
+				}
 			}
 		});
 	}
@@ -167,8 +172,13 @@ class StartGame {
 						if (!turret.drawCanvas(this.path, pos, 30)) {
 							this.towers.push(turret);
 							this.userGold -= towerCost;
-							this.audio4.volume = 0.1;
-							this.audio4.play();
+							if (this.soundOn.classList.contains('buttonSelectedBorder')) {
+								this.audio4.volume = 0.1;
+								this.audio4.play();
+							} else if (this.soundOff.classList.contains('buttonSelectedBorder')) {
+								this.audio4.volume = 0;
+								this.audio4.pause();
+							}
 						}
 					}
 				} else if (type === 'slow') {
@@ -178,8 +188,13 @@ class StartGame {
 						if (!turret.drawCanvas(this.path, pos, 30)) {
 							this.towers.push(turret);
 							this.userGold -= towerCost;
-							this.audio4.volume = 0.1;
-							this.audio4.play();
+							if (this.soundOn.classList.contains('buttonSelectedBorder')) {
+								this.audio4.volume = 0.1;
+								this.audio4.play();
+							} else if (this.soundOff.classList.contains('buttonSelectedBorder')) {
+								this.audio4.volume = 0;
+								this.audio4.pause();
+							}
 						}
 					}
 				} else if (type === 'flame') {
@@ -189,8 +204,13 @@ class StartGame {
 						if (!turret.drawCanvas(this.path, pos, 30)) {
 							this.towers.push(turret);
 							this.userGold -= towerCost;
-							this.audio4.volume = 0.1;
-							this.audio4.play();
+							if (this.soundOn.classList.contains('buttonSelectedBorder')) {
+								this.audio4.volume = 0.1;
+								this.audio4.play();
+							} else if (this.soundOff.classList.contains('buttonSelectedBorder')) {
+								this.audio4.volume = 0;
+								this.audio4.pause();
+							}
 						}
 					}
 				} else if (type === 'catapult') {
@@ -200,8 +220,13 @@ class StartGame {
 						if (!turret.drawCanvas(this.path, pos, 30)) {
 							this.towers.push(turret);
 							this.userGold -= towerCost;
-							this.audio4.volume = 0.1;
-							this.audio4.play();
+							if (this.soundOn.classList.contains('buttonSelectedBorder')) {
+								this.audio4.volume = 0.1;
+								this.audio4.play();
+							} else if (this.soundOff.classList.contains('buttonSelectedBorder')) {
+								this.audio4.volume = 0;
+								this.audio4.pause();
+							}
 						}
 					}
 				}
@@ -274,8 +299,14 @@ class StartGame {
 		this.restartButton.classList.remove('hidden');
 		//alert('Estamos aqui');
 		this.audio1.pause();
-		this.audio2.volume = 0.1;
-		this.audio2.play();
+
+		if (this.soundOn.classList.contains('buttonSelectedBorder')) {
+			this.audio2.volume = 0.1;
+			this.audio2.play();
+		} else if (this.soundOff.classList.contains('buttonSelectedBorder')) {
+			this.audio2.volume = 0;
+			this.audio2.pause();
+		}
 		//Limpiamos mapa
 		this.context.clearRect(0, 0, 1200, 800);
 		//Pintamos logo
@@ -303,8 +334,14 @@ class StartGame {
 		//Pintamos logo
 		this.context.drawImage(this.loser, 325, 30, 600, 300);
 		this.audio1.pause();
-		this.audio3.volume = 0.1;
-		this.audio3.play();
+
+		if (this.soundOn.classList.contains('buttonSelectedBorder')) {
+			this.audio3.volume = 0.1;
+			this.audio3.play();
+		} else if (this.soundOff.classList.contains('buttonSelectedBorder')) {
+			this.audio3.volume = 0;
+			this.audio3.pause();
+		}
 
 		//10 seconds, refresh or click
 		let timeleft = 10;
@@ -336,5 +373,15 @@ class StartGame {
 		this.context.font = '30px Play';
 		this.context.fillStyle = 'red';
 		this.context.fillText('You have unlocked the OP turret', 500, 500);
+	}
+	checkSound() {
+		if (this.soundOn.classList.contains('buttonSelectedBorder')) {
+			this.audio1.volume = 0.1;
+			this.audio1.play();
+			this.audio1.loop = true;
+		} else if (this.soundOff.classList.contains('buttonSelectedBorder')) {
+			this.audio1.volume = 0;
+			this.audio1.pause();
+		}
 	}
 }
