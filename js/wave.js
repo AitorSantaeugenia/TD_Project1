@@ -25,7 +25,7 @@ class Wave {
 	}
 	getWave2() {
 		let wave = [];
-		let countEnemies = this.waveCount;
+		let countEnemies = this.waveCount + 10;
 		for (let i = 1; i <= countEnemies; i++) {
 			wave.push(new SmallDemon(this.context, this.path));
 		}
@@ -41,7 +41,7 @@ class Wave {
 	}
 	getWave4() {
 		let wave = [];
-		let countEnemies = this.waveCount;
+		let countEnemies = this.waveCount + 10;
 		for (let i = 1; i <= countEnemies; i++) {
 			wave.push(new SmallDemon(this.context, this.path));
 		}

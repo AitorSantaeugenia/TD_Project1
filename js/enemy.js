@@ -38,55 +38,92 @@ class SmallDemon extends Enemy {
 		// Imagen enemigo red.png
 		this.randomImage = Math.trunc(Math.random() * 8);
 		this.img = new Image();
-		this.img.src = `https://aitorsantaeugenia.github.io/TD_Project1/images/enemies/enemy${this.randomImage}.png`;
+		//this.img.src = `https://aitorsantaeugenia.github.io/TD_Project1/images/enemies/enemy${this.randomImage}.png`;
+		this.img.src = `https://aitorsantaeugenia.github.io/TD_Project1//images/enemies/sprites/${this
+			.randomImage}.png`;
 
 		//tring out spritesheets
-		this.w = 50;
-		this.h = 50;
+		this.canvas = document.querySelector('canvas');
+		//let canvas = document.querySelector('canvas');
+
 		//https://dev.to/martyhimmel/animating-sprite-sheets-with-javascript-ag3
 		//Work in progress
 		//1- pillar posicion imagen
 		//2- pintar imagen (acordarse del random de arriba)
 		//3- animar con frames
-		// this.scale = 2;
-		// this.scaledWidth = this.scale * this.w;
-		// this.scaledHeight = this.scale * this.h;
-		// this.cycleLoop = [ 0, 1, 2 ];
-		// this.currentLoopIndex = 0;
-		// this.frameCount = 0;
+		this.frameCount = 0;
+		this.w = 40;
+		this.h = 40;
+		this.width = 40;
+		this.height = 40;
+		this.img.frames = 3;
+		this.img.currentLoopIndex = 0;
+		this.swidth = 0;
+		this.sheight = 0;
+
+		//tamaño diferente de los sprites
+		if (this.randomImage === 1) {
+			this.swidth = 170;
+			this.sheight = 240;
+		} else if (this.randomImage === 2) {
+			this.swidth = 215;
+			this.sheight = 240;
+		} else if (this.randomImage === 3) {
+			this.swidth = 180;
+			this.sheight = 240;
+		} else if (this.randomImage === 4) {
+			this.swidth = 125;
+			this.sheight = 200;
+		} else if (this.randomImage === 5) {
+			this.swidth = 155;
+			this.sheight = 240;
+		} else if (this.randomImage === 6) {
+			this.swidth = 138;
+			this.sheight = 240;
+		} else if (this.randomImage === 7) {
+			this.swidth = 160;
+			this.sheight = 280;
+		} else {
+			this.swidth = 170;
+			this.sheight = 240;
+		}
+		//5
+		//155
+
+		//6
+		//138
+
+		//7
+		//	160,
+		//280,
 	}
 
 	draw() {
-		this.context.drawImage(this.img, this.x - this.w / 2, this.y - this.h / 2, this.w, this.h);
+		this.context.drawImage(
+			this.img,
+			this.img.currentLoopIndex * this.img.width / this.img.frames,
+			this.direction,
+			this.swidth,
+			this.sheight,
+			this.x - this.w / 2,
+			this.y - this.h / 2,
+			this.w,
+			this.h
+		);
+
+		this.frameCount++;
+		if (this.frameCount > 10) {
+			this.frameCount = 0;
+			this.img.currentLoopIndex++;
+		}
+		if (this.img.currentLoopIndex >= this.img.frames) {
+			this.img.currentLoopIndex = 0;
+		}
+
 		this.paintHpBar();
-		// this.context.ctx.drawImage(
-		// 	this.img,
-		// 	this.frameX * this.w,
-		// 	this.frameY * this.h,
-		// 	this.w,
-		// 	this.h,
-		// 	this.canvasX,
-		// 	this.canvasY,
-		// 	this.scaledWidth,
-		// 	this.scaledHeight
-		// );
 	}
 
 	move() {
-		// this.frameCount++;
-		// if (this.frameCount < 15) {
-		// 	window.requestAnimationFrame(step);
-		// 	return;
-		// }
-		// this.frameCount = 0;
-		// this.ctx.clearRect(0, 0, this.canvas.w, this.canvas.h);
-		// drawFrame(this.cycleLoop[this.currentLoopIndex], 0, 0, 0);
-		// this.currentLoopIndex++;
-		// if (this.currentLoopIndex >= this.cycleLoop.length) {
-		// 	this.currentLoopIndex = 0;
-		// }
-		// window.requestAnimationFrame(step);
-
 		this.directionPath();
 	}
 
@@ -110,8 +147,8 @@ class SmallDemon extends Enemy {
 		new HPbar(
 			this.context,
 			this.x - this.w / 2,
-			this.y - this.h / 2 - 5,
-			this.wHPBar * this.minionHp / 250,
+			this.y - this.h / 2 - 15,
+			this.wHPBar * this.minionHp / 300,
 			8
 		).draw();
 	}
