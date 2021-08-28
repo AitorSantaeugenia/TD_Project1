@@ -20,6 +20,7 @@ window.onload = function() {
 	const audio = document.getElementById('buttonMusic');
 	let cheatCodeInput = document.getElementById('cheatCodes');
 	let goldCheat = document.getElementById('inputCheatCode');
+	let restartButton = document.getElementById('restarButtonDiv');
 
 	// Events
 	document.addEventListener('keydown', (event) => {
@@ -36,9 +37,11 @@ window.onload = function() {
 				start.cheatCodeGold();
 				document.getElementById('inputCheatCode').value = textDefault;
 			} else if (textToUpper === 'ezwin') {
+				// restartButton.classList.remove('hidden');
 				start.gameWin();
 				document.getElementById('inputCheatCode').value = textDefault;
 			} else if (textToUpper === '4lose') {
+				// restartButton.classList.remove('hidden');
 				start.gameLost();
 				document.getElementById('inputCheatCode').value = textDefault;
 			} else if (textToUpper === 'hollymolly') {
@@ -85,6 +88,10 @@ window.onload = function() {
 		audio.play();
 		audio.volume = 0.1;
 		startGame();
+	});
+
+	restartButton.addEventListener('click', function() {
+		start.restart();
 	});
 
 	sandTurret.addEventListener('click', function() {

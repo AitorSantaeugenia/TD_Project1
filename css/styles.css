@@ -228,6 +228,45 @@ canvas {
   -o-user-drag: none;
 }
 
+.noDrag{
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+}
+
+#restarButtonDiv{
+  /* border:1px solid red; */
+  text-align: center;
+  width: 95vw;
+  position: absolute;
+  margin-top: -380px;
+  margin-left:60px !important;
+
+}
+
+#restartButtonGame{
+  color:yellow;
+  background-color: rgb(7, 7, 110);
+  padding:15px 140px;
+  font-size:30px;
+  border-radius: 10px;
+  box-shadow: 5px 10px #000000;
+  border:2px solid rgba(243, 219, 1, 0.979);
+  cursor: pointer;
+ 
+}
+
+#restartButtonGame:hover {
+  background-color: rgb(7, 7, 155);
+}
+
+#restartingTimerText{
+color:red;
+font-size: 50px;
+font-weight: bold;
+font-family: Play;
+}
 .hidden {
   display: none;
 }

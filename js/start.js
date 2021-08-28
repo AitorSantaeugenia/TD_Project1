@@ -23,6 +23,8 @@ class StartGame {
 		this.winner = new Image();
 		this.winner.src = 'https://aitorsantaeugenia.github.io/TD_Project1/images/victory.png';
 		//this.htmlBG = document.getElementById('htmlID');
+		this.restartButton = document.getElementById('restarButtonDiv');
+		this.restartTextCd = document.getElementById('restartingTimerText');
 
 		this.towerCosts = {
 			sand: 70,
@@ -225,18 +227,7 @@ class StartGame {
 		HP.innerText = this.userHP;
 		if (this.userHP === 0) {
 			//Paramos juego
-			window.cancelAnimationFrame(this.intervalId);
-			//Limpiamos mapa
-			this.context.clearRect(0, 0, 1200, 800);
-			//Pintamos logo
-			this.context.drawImage(this.loser, 300, 150, 600, 300);
-			this.audio1.pause();
-			this.audio3.volume = 0.1;
-			this.audio3.play();
-			//2 seconds, refresh
-			setTimeout(() => {
-				this.restart();
-			}, 6000);
+			this.gameLost();
 		}
 	}
 
@@ -279,6 +270,8 @@ class StartGame {
 	gameWin() {
 		//Paramos juego
 		window.cancelAnimationFrame(this.intervalId);
+		this.restartTextCd.innerText = 'Restarting in 10 seconds';
+		this.restartButton.classList.remove('hidden');
 		//alert('Estamos aqui');
 		this.audio1.pause();
 		this.audio2.volume = 0.1;
@@ -286,26 +279,44 @@ class StartGame {
 		//Limpiamos mapa
 		this.context.clearRect(0, 0, 1200, 800);
 		//Pintamos logo
-		this.context.drawImage(this.winner, 150, 50, 950, 420);
+		this.context.drawImage(this.winner, 150, -55, 950, 420);
 
-		//6 seconds, refresh
-		setTimeout(() => {
-			this.restart();
-		}, 6000);
+		//10 seconds, refresh or click
+		let timeleft = 10;
+		let downloadTimer = setInterval(() => {
+			if (timeleft <= 0) {
+				setInterval(downloadTimer);
+				this.restart();
+			} else {
+				this.restartTextCd.innerText = 'Restarting in ' + timeleft + ' seconds';
+			}
+			timeleft -= 1;
+		}, 1000);
 	}
 	gameLost() {
 		window.cancelAnimationFrame(this.intervalId);
+		this.restartTextCd.innerText = 'Restarting in 10 seconds';
+		this.restartButton.classList.remove('hidden');
+
 		//Limpiamos mapa
 		this.context.clearRect(0, 0, 1200, 800);
 		//Pintamos logo
-		this.context.drawImage(this.loser, 300, 150, 600, 300);
+		this.context.drawImage(this.loser, 325, 30, 600, 300);
 		this.audio1.pause();
 		this.audio3.volume = 0.1;
 		this.audio3.play();
-		//6 seconds, refresh
-		setTimeout(() => {
-			this.restart();
-		}, 6000);
+
+		//10 seconds, refresh or click
+		let timeleft = 10;
+		let downloadTimer = setInterval(() => {
+			if (timeleft <= 0) {
+				setInterval(downloadTimer);
+				this.restart();
+			} else {
+				this.restartTextCd.innerText = 'Restarting in ' + timeleft + ' seconds';
+			}
+			timeleft -= 1;
+		}, 1000);
 	}
 	restart() {
 		location.reload();
