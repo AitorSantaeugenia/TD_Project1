@@ -11,7 +11,8 @@
   ezwin - instant win<br>
   4lose - instant lose
 ```
-
+# In play game
+![In play game](https://user-images.githubusercontent.com/14861253/133678189-1784f8b9-0f65-4119-832f-186190dbdea4.gif)
 
 # Starting screen
 ![Tower defense start](https://user-images.githubusercontent.com/14861253/133671823-983263cc-db41-459a-a088-c77a538801dd.png)
