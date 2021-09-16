@@ -5,7 +5,7 @@
 - It's rumored there are some cheats..
 <details>
   <summary>Need cheats?</summary>
-  ```Need cheats?
+  ```
   whosyourdaddy - best turret unlocked
   greedisgood - 200 gold
   hollymolly - 1000 gold
