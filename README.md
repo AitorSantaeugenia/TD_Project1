@@ -5,7 +5,7 @@
 - It's rumored there are some cheats (return key and type it)..
 -- <details>
   <summary>Need cheats?</summary>
-  1. whosyourdaddy - best turret unlocked
+  [x] 1. whosyourdaddy - best turret unlocked
   2. greedisgood - 200 gold
   3. hollymolly - 1000 gold
   4. ezwin - instant win
