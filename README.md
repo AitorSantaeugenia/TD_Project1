@@ -11,7 +11,7 @@
   ezwin - instant win<br>
   4lose - instant lose
 ```
-Play it from -> https://aitorsantaeugenia.github.io/TD_Project1/
+[Try it](https://aitorsantaeugenia.github.io/TD_Project1/) || https://aitorsantaeugenia.github.io/TD_Project1/
 
 # In play game
 ![In play game](https://user-images.githubusercontent.com/14861253/133678189-1784f8b9-0f65-4119-832f-186190dbdea4.gif)
