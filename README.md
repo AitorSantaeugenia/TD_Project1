@@ -3,6 +3,13 @@
 - Place turrets into the canvas, selecting it and clicking where you want it.
 - There are 3 waves of 10-20 minions x wave
 - It's rumored there are some cheats..
+  ```Need cheats?
+  whosyourdaddy - best turret unlocked
+  greedisgood - 200 gold
+  hollymolly - 1000 gold
+  ezwin - instant win
+  4lose - instant lose
+  ```
 
 # Starting screen
 ![Tower defense start](https://user-images.githubusercontent.com/14861253/133671823-983263cc-db41-459a-a088-c77a538801dd.png)
