@@ -5,13 +5,11 @@
 - It's rumored there are some cheats (return key and type it)..
 -- <details>
   <summary>Need cheats?</summary>
-  ```javascript
   1. whosyourdaddy - best turret unlocked
   2. greedisgood - 200 gold
   3. hollymolly - 1000 gold
   4. ezwin - instant win
   5. 4lose - instant lose
-  ```
 </details>
 
 # Starting screen
