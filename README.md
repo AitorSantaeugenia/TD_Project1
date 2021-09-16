@@ -20,3 +20,9 @@
 ![Game screen](https://user-images.githubusercontent.com/14861253/133672081-c2b681bd-a071-4fb1-b11b-ffb85bb87fc6.png)
 # Return key for some cheats
 ![Return for cheats](https://user-images.githubusercontent.com/14861253/133672051-823e8365-06d9-475b-8d01-59761b59df77.png)
+<br>
+
+```
+  Done in vanilla Javascript
+  Using canvas
+```
