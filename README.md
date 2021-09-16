@@ -2,15 +2,15 @@
 - Tower defense game like Warcraft 3 ROC / TFT
 - Place turrets into the canvas, selecting it and clicking where you want it.
 - There are 3 waves of 10-20 minions x wave
-- It's rumored there are some cheats..
-<details>
+- It's rumored there are some cheats (return key and type it)..
+-- <details>
   <summary>Need cheats?</summary>
-  ```
-  whosyourdaddy - best turret unlocked
-  greedisgood - 200 gold
-  hollymolly - 1000 gold
-  ezwin - instant win
-  4lose - instant lose
+  ```javascript
+  - whosyourdaddy - best turret unlocked
+  - greedisgood - 200 gold
+  - hollymolly - 1000 gold
+  - ezwin - instant win
+  - 4lose - instant lose
   ```
 </details>
 
