@@ -6,11 +6,11 @@
 -- <details>
   <summary>Need cheats?</summary>
   ```javascript
-  - whosyourdaddy - best turret unlocked
-  - greedisgood - 200 gold
-  - hollymolly - 1000 gold
-  - ezwin - instant win
-  - 4lose - instant lose
+  1. whosyourdaddy - best turret unlocked
+  2. greedisgood - 200 gold
+  3. hollymolly - 1000 gold
+  4. ezwin - instant win
+  5. 4lose - instant lose
   ```
 </details>
 
