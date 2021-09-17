@@ -5,10 +5,10 @@
 - Enjoy an amazing soundtrack
 - It's rumored there are some cheats (return key and type it)..
 ```
-  whosyourdaddy - best turret unlocked<br>
-  greedisgood - 200 gold<br>
-  hollymolly - 1000 gold<br>
-  ezwin - instant win<br>
+  whosyourdaddy - best turret unlocked
+  greedisgood - 200 gold
+  hollymolly - 1000 gold
+  ezwin - instant win
   4lose - instant lose
 ```
 [Try it](https://aitorsantaeugenia.github.io/TD_Project1/) || https://aitorsantaeugenia.github.io/TD_Project1/
