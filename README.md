@@ -19,6 +19,7 @@
 - Centered vw & vh canvas
 - Boss round and enemies with diferent stats
 - Refractor code (and clear functions, classes, comments)
+- Better game balance
 
 ```
 If you have any suggesitons, plz don't be shy and tell me here on github |or| aitorsantaeugenia@gmail.com
