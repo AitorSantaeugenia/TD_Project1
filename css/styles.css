@@ -9,7 +9,7 @@
 }
 
 html{
-  background-image: url(https://aitorsantaeugenia.github.io/TD_Project1/images/loadingScreen1.png);
+  background-image: url(../images/loadingScreen1.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -21,7 +21,7 @@ html{
 }
 
 canvas {
-  background: url("https://aitorsantaeugenia.github.io/TD_Project1/images/background.png");
+  background: url("../images/background.png");
   margin-top: 40px ;
   background-repeat: no-repeat;
   /* border:1px solid red; */
@@ -144,7 +144,7 @@ canvas {
 }
 
 .startingMenu {
-  background: url("https://aitorsantaeugenia.github.io/TD_Project1/images/loadingScreen2.png");
+  background: url("../images/loadingScreen2.png");
   background-size: 100%;
   height: 100vh !important;
   display: flex;

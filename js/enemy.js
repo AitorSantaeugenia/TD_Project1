@@ -39,7 +39,7 @@ class SmallDemon extends Enemy {
 		this.randomImage = Math.trunc(Math.random() * 8);
 		this.img = new Image();
 		//this.img.src = `https://aitorsantaeugenia.github.io/TD_Project1/images/enemies/enemy${this.randomImage}.png`;
-		this.img.src = `https://aitorsantaeugenia.github.io/TD_Project1//images/enemies/sprites/${this
+		this.img.src = `./images/enemies/sprites/${this
 			.randomImage}.png`;
 
 		//tring out spritesheets
@@ -191,7 +191,7 @@ class HPbar {
 	draw() {
 		this.context.fillStyle = this.color;
 		this.img = new Image();
-		this.img.src = 'https://aitorsantaeugenia.github.io/TD_Project1/images/hbar.png';
+		this.img.src = './images/hbar.png';
 		this.context.drawImage(this.img, this.posx, this.posy, this.width, this.height);
 	}
 }

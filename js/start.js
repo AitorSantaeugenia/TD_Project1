@@ -19,9 +19,9 @@ class StartGame {
 		this.userHP = 35;
 		this.userGold = 500;
 		this.loser = new Image();
-		this.loser.src = 'https://aitorsantaeugenia.github.io/TD_Project1/images/defeat.png';
+		this.loser.src = './images/defeat.png';
 		this.winner = new Image();
-		this.winner.src = 'https://aitorsantaeugenia.github.io/TD_Project1/images/victory.png';
+		this.winner.src = './images/victory.png';
 		//this.htmlBG = document.getElementById('htmlID');
 		this.restartButton = document.getElementById('restarButtonDiv');
 		this.restartTextCd = document.getElementById('restartingTimerText');
@@ -35,7 +35,7 @@ class StartGame {
 	}
 
 	run() {
-		//this.htmlBG.src = 'https://aitorsantaeugenia.github.io/TD_Project1/images/loadingScreen1.png';
+		//this.htmlBG.src = './images/loadingScreen1.png';
 		this.intervalId = requestAnimationFrame(() => this.run());
 		this.checkSound();
 		this.context.clearRect(0, 0, this.context.canvas.width, this.context.canvas.height);
