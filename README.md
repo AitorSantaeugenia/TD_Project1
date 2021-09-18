@@ -13,11 +13,15 @@
 ```
 [Try it](https://aitorsantaeugenia.github.io/TD_Project1/) || https://aitorsantaeugenia.github.io/TD_Project1/
 
-# TODO
+# TO-DO
 - Let the player chose number of enemies and waves
 - Chose at least 3 diferent maps (with different paths)
 - Centered vw & vh canvas
-- Boss round and enemies with diferent stats 
+- Boss round and enemies with diferent stats
+
+```
+If you have any suggesitons, plz don't be shy and tell me here on github |or| aitorsantaeugenia@gmail.com
+```
 
 # In play game
 ![In play game](https://user-images.githubusercontent.com/14861253/133678189-1784f8b9-0f65-4119-832f-186190dbdea4.gif)
