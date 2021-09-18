@@ -18,6 +18,7 @@
 - Chose at least 3 diferent maps (with different paths)
 - Centered vw & vh canvas
 - Boss round and enemies with diferent stats
+- Refractor code (and clear functions, classes, comments)
 
 ```
 If you have any suggesitons, plz don't be shy and tell me here on github |or| aitorsantaeugenia@gmail.com
