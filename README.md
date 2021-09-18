@@ -13,7 +13,7 @@
 ```
 [Try it](https://aitorsantaeugenia.github.io/TD_Project1/) || https://aitorsantaeugenia.github.io/TD_Project1/
 
-#TODO
+# TODO
 - Let the player chose number of enemies and waves
 - Chose at least 3 diferent maps (with different paths)
 - Centered vw & vh canvas
