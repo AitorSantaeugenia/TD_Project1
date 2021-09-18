@@ -15,9 +15,9 @@
 
 # TO-DO
 - Let the player chose number of enemies and waves
-- Chose at least 3 diferent maps (with different paths)
+- Chose at least 3 different maps (with different paths)
 - Centered vw & vh canvas
-- Boss round and enemies with diferent stats
+- Boss round and enemies with different stats
 - Refractor code (and clear functions, classes, comments)
 - Better game balance
 
