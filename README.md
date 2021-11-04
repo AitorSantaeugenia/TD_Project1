@@ -25,7 +25,7 @@
 If you have any suggesitons, plz don't be shy and tell me here on github |or| aitorsantaeugenia@gmail.com
 ```
 
-# In play game
+# 🎮 In play game
 ![In play game](https://user-images.githubusercontent.com/14861253/133678189-1784f8b9-0f65-4119-832f-186190dbdea4.gif)
 
 # Starting screen
@@ -35,9 +35,11 @@ If you have any suggesitons, plz don't be shy and tell me here on github |or| ai
 # Return key for some cheats
 ![Return for cheats](https://user-images.githubusercontent.com/14861253/133672051-823e8365-06d9-475b-8d01-59761b59df77.png)
 <br>
-
 ```
   Done in vanilla Javascript
   Using canvas
 ```
-BY-NC-SA
+---
+<div align="center">
+📝 BY-NC-SA
+</div>
