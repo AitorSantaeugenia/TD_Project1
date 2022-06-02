@@ -5,28 +5,28 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="stylesheet" href="https://aitorsantaeugenia.github.io/TD_Project1/css/styles.css" />
+  <link rel="stylesheet" href="./css/styles.css" />
   <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
   <title>Tower defense - Ironhack project #1</title>
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Play" />
-  <link rel="icon" type="image/png" href="https://aitorsantaeugenia.github.io/TD_Project1/images/favicon.png" />
-  <audio src="https://aitorsantaeugenia.github.io/TD_Project1/sounds/jobdone.mp3" id="jobDone"></audio>
-  <audio src="https://aitorsantaeugenia.github.io/TD_Project1/sounds/liveless.wav" id="liveLessMusic"></audio>
-  <audio src="https://aitorsantaeugenia.github.io/TD_Project1/sounds/moregold.wav" id="moreGoldMusic"></audio>
-  <audio src="https://aitorsantaeugenia.github.io/TD_Project1/sounds/musicbg.mp3" id="backgroundMusic"></audio>
-  <audio src="https://aitorsantaeugenia.github.io/TD_Project1/sounds/newgame.wav" id="buttonMusic"></audio>
-  <audio src="https://aitorsantaeugenia.github.io/TD_Project1/sounds/victory.mp3" id="victoryMusic"></audio>
-  <audio src="https://aitorsantaeugenia.github.io/TD_Project1/sounds/defeat.mp3" id="defeatMusic"></audio>
+  <link rel="icon" type="image/png" href="./images/favicon.png" />
+  <audio src="./sounds/jobdone.mp3" id="jobDone"></audio>
+  <audio src="./sounds/liveless.wav" id="liveLessMusic"></audio>
+  <audio src="./sounds/moregold.wav" id="moreGoldMusic"></audio>
+  <audio src="./sounds/musicbg.mp3" id="backgroundMusic"></audio>
+  <audio src="./sounds/newgame.wav" id="buttonMusic"></audio>
+  <audio src="./sounds/victory.mp3" id="victoryMusic"></audio>
+  <audio src="./sounds/defeat.mp3" id="defeatMusic"></audio>
 </head>
 
 <body>
   <div id="startingMenu" class="startingMenu">
     <p></p>
-    <img src="https://aitorsantaeugenia.github.io/TD_Project1/images/td.png" alt="Logo game" style="margin-left:40%"
+    <img src="./images/td.png" alt="Logo game" style="margin-left:40%"
       class="noDrag">
     <p></p>
     <button id="startGame" class="btn" style="margin-left:40%" class="noDrag"><img
-        src="https://aitorsantaeugenia.github.io/TD_Project1/images/start.png" alt="Start button"></button><br>
+        src="./images/start.png" alt="Start button"></button><br>
     <!-- <img id="previewImage" src="./images/road.png"> -->
     <!-- <img id="loadingImage" src="./images/loadingBar.png"> -->
   </div>
@@ -44,7 +44,7 @@
       <div id="restarButtonDiv" class="hidden">
         <p id="restartingTimerText"></p><br><br>
         <button id="restartButtonGame" class="btn noDrag"><img
-            src="https://aitorsantaeugenia.github.io/TD_Project1/images/restart.png" alt="Restart button"></button>
+            src="./images/restart.png" alt="Restart button"></button>
       </div>
     </div>
 
@@ -52,40 +52,40 @@
 
       <div class="flexForCanvas">
         <div class="lowerMenuTowers">
-          <img src="https://aitorsantaeugenia.github.io/TD_Project1/images/lowerMenu.png" alt="Menu for turrets"
+          <img src="./images/lowerMenu.png" alt="Menu for turrets"
             id="preventDrag">
           <div class="turretSelector">
-            <img src="https://aitorsantaeugenia.github.io/TD_Project1/images/soundgreen.png" alt="Menu for turrets"
+            <img src="./images/soundgreen.png" alt="Menu for turrets"
               id="yesSound" class="logoSoundSound buttonSelectedBorder">
-            <img src="https://aitorsantaeugenia.github.io/TD_Project1/images/nosoundred.png" alt="Menu for turrets"
+            <img src="./images/nosoundred.png" alt="Menu for turrets"
               id="noSound" class="logoSoundNoSound">
             <div class="costGold margin-leftDiv">
-              <img src="https://aitorsantaeugenia.github.io/TD_Project1/images/vida.png"
+              <img src="./images/vida.png"
                 style="width: 30px !important; margin-top:10px !important"><span id="hpPlayer" class="costTurrets"
                 style="margin-top:10px !important">20</span>
             </div>
 
             <div class="costGold" style="margin-left:11px;">
-              <img src="https://aitorsantaeugenia.github.io/TD_Project1/images/coin.png"
+              <img src="./images/coin.png"
                 style="width: 50px !important"><span id="goldPlayer" class="costTurrets"
                 style="margin-top:-5px !important">$0</span>
             </div>
             <div class="imageGif">
-              <img src="https://aitorsantaeugenia.github.io/TD_Project1/images/gif.gif">
+              <img src="./images/gif.gif">
             </div>
             <div class="costGold" style="margin-left:60px">
-              <img src="https://aitorsantaeugenia.github.io/TD_Project1/images/gold.png"><span class="costTurrets"
+              <img src="./images/gold.png"><span class="costTurrets"
                 id="idGoldTurretCost">$100 </span>
             </div>
             <div class="turretsMenuToPick" style="margin-left:284px; margin-top:18px">
               <img id="sandTurret" class="turretToSelect"
-                src="https://aitorsantaeugenia.github.io/TD_Project1/images/towers/sandTurret.png">
+                src="./images/towers/sandTurret.png">
               <img id="cataTurret" class="turretToSelect"
-                src="https://aitorsantaeugenia.github.io/TD_Project1/images/towers/stoneTurret.png">
+                src="./images/towers/stoneTurret.png">
               <img id="slowTurret" class="turretToSelect"
-                src="https://aitorsantaeugenia.github.io/TD_Project1/images/towers/freezeTurret.png">
+                src="./images/towers/freezeTurret.png">
               <img id="flameTurret" class="turretToSelect hidden"
-                src="https://aitorsantaeugenia.github.io/TD_Project1/images/towers/flameTurret.png">
+                src="./images/towers/flameTurret.png">
 
             </div>
           </div>
@@ -95,14 +95,14 @@
 
   </div>
   </div>
-  <script type="text/javascript" src="https://aitorsantaeugenia.github.io/TD_Project1/js/canvas.js"></script>
-  <script type="text/javascript" src="https://aitorsantaeugenia.github.io/TD_Project1/js/projectiles.js"></script>
-  <script type="text/javascript" src="https://aitorsantaeugenia.github.io/TD_Project1/js/towers.js"></script>
+  <script type="text/javascript" src="./js/canvas.js"></script>
+  <script type="text/javascript" src="./js/projectiles.js"></script>
+  <script type="text/javascript" src="./js/towers.js"></script>
   <!-- <script type="text/javascript" src="./js/enemy.js"></script> -->
-  <script type="text/javascript" src="https://aitorsantaeugenia.github.io/TD_Project1/js/enemy.js"></script>
-  <script type="text/javascript" src="https://aitorsantaeugenia.github.io/TD_Project1/js/wave.js"></script>
-  <script type="text/javascript" src="https://aitorsantaeugenia.github.io/TD_Project1/js/start.js"></script>
-  <script type="text/javascript" src="https://aitorsantaeugenia.github.io/TD_Project1/js/init.js"></script>
+  <script type="text/javascript" src="./js/enemy.js"></script>
+  <script type="text/javascript" src="./js/wave.js"></script>
+  <script type="text/javascript" src="./js/start.js"></script>
+  <script type="text/javascript" src="./js/init.js"></script>
   <!-- <script type="text/javascript" src="./js/start.js"></script>
   <script type="text/javascript" src="./js/init.js"></script> -->
 </body>
